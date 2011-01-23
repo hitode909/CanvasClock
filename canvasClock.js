@@ -50,10 +50,10 @@
 	}
 
 	setInterval(function (){
-	    date = new Date();
-	    hour = date.getHours();
-	    min = date.getMinutes();
-	    sec = date.getSeconds();
+	    var date = new Date();
+	    var hour = date.getHours();
+	    var min = date.getMinutes();
+	    var sec = date.getSeconds();
 	    context.clearRect(0, 0, size*2, size*2);
 	    drawCircle(size, sec/60);
 	    drawCircle(size*2/3, min/60);
