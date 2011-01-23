@@ -8,15 +8,10 @@
 	    }catch(e){}
 	    return false;
 	}
-	if(opts == undefined) opts = {};
-	var defaults = {
-	    size: 300,
+        opts = $.extend( {
+            size: 300,
 	    clockWise: true,
-	};
-	$.each(defaults,function(k,v){
-	    opts[k] = (opts[k] != undefined)?
-		opts[k] : defaults[k];
-	});
+        }, opts);
 	setUp.call(container,opts);
 	return this;
     }
