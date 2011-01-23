@@ -64,6 +64,6 @@
 	    drawCircle(size, sec/60);
 	    drawCircle(size*2/3, min/60);
 	    drawCircle(size/3, (hour%12)/12);
-	},1000);
+	},100);
     }
 })(jQuery)
