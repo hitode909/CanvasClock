@@ -33,7 +33,7 @@
 	    return false;
 	}
 	var context = canvas.getContext('2d');
-	var size = opts['size'] / 2;
+	var size = opts.size / 2;
 	
 	context.translate(size, size);
 	context.rotate(-Math.PI/2);
@@ -45,7 +45,7 @@
 	    context.beginPath();
 	    context.lineWidth = lw;
 	    context.arc(size, size, r - lw/2, 0, Math.PI*2*p,
-			!opts['clockWise']);
+			!opts.clockWise);
 	    context.stroke();
 	}
 
