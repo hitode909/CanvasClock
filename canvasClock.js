@@ -28,10 +28,9 @@
     function setUp(opts){
 	
 	$(this).append(
-	    '<canvas class="canvasClock" ' +
-		'width="' + opts['size'] +
-		'" height="' + opts['size'] +
-		'"></canvas>'
+            $('<canvas>')
+                .addClass('canvasClock')
+                .attr({width: opts.size, height: opts.size })
 	);
 
 	var canvas = $(this).children('canvas.canvasClock').get(0);
